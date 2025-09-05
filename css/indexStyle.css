@@ -34,6 +34,13 @@
             align-items: center;
         }
 
+        .navbar-brand img{
+            max-height: 40px;
+            max-width: 50px;
+            border: 0.5px black solid;
+            border-radius: 55%;
+        }
+
         .navbar-brand i {
             margin-right: 10px;
             font-size: 28px;

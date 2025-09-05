@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Heaven Veterinary Clinic</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- CSS -->
+     <link rel="stylesheet" href="./css/gallery.css">
+</head>
+<body>
+    <!-- Navbar start here -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+                <!-- logo img option -->
+                <!-- <img src="./assets/petLogo.jpg" alt="logo"> -->
+                <i class="fas fa-paw"></i>Heaven <span>Clinic</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./appointment.html">Book now</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About us</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar Ends Here -->
+
+    <!-- Gallery Hero Section -->
+    <section class="gallery-hero">
+        <div class="container gallery-hero-content">
+            <h1>Our Clinic Gallery</h1>
+            <p>Take a visual journey through our state-of-the-art facilities, advanced treatments, and the compassionate care we provide to our furry patients.</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-filter="all">All Photos</button>
+                <button class="filter-btn" data-filter="clinic">Clinic Facilities</button>
+                <button class="filter-btn" data-filter="treatments">Treatments</button>
+                <button class="filter-btn" data-filter="surgeries">Surgeries</button>
+                <button class="filter-btn" data-filter="care">Patient Care</button>
+            </div>
+            
+            <div class="gallery-grid">
+                <!-- Clinic Facilities -->
+                <div class="gallery-item" data-category="clinic">
+                    <img src="https://images.unsplash.com/photo-1577495508326-19a1b3cf65b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Modern Veterinary Clinic" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Modern Reception Area</h3>
+                        <p class="gallery-category">Clinic Facilities</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="clinic">
+                    <img src="https://images.unsplash.com/photo-1576086213369-97a306d36557?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Examination Room" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Examination Room</h3>
+                        <p class="gallery-category">Clinic Facilities</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="clinic">
+                    <img src="https://images.unsplash.com/photo-1755311903890-c0aed5dc2825?q=80&w=435&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Diagnostic Equipment" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Diagnostic Imaging Center</h3>
+                        <p class="gallery-category">Clinic Facilities</p>
+                    </div>
+                </div>
+                
+                <!-- Treatments -->
+                <div class="gallery-item" data-category="treatments">
+                    <img src="https://images.unsplash.com/photo-1596272875729-ed2ff7d6d9c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Veterinarian with dog" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Routine Checkup</h3>
+                        <p class="gallery-category">Treatments</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="treatments">
+                    <img src="https://images.unsplash.com/photo-1543852786-1cf6624b9987?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Dental cleaning" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Dental Cleaning</h3>
+                        <p class="gallery-category">Treatments</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="treatments">
+                    <img src="https://images.unsplash.com/photo-1756789347833-dd0841c4086f?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Vaccination" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Vaccination</h3>
+                        <p class="gallery-category">Treatments</p>
+                    </div>
+                </div>
+                
+                <!-- Surgeries -->
+                <div class="gallery-item" data-category="surgeries">
+                    <img src="https://images.unsplash.com/photo-1576086213369-97a306d36557?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Surgery preparation" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Pre-Surgery Preparation</h3>
+                        <p class="gallery-category">Surgeries</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="surgeries">
+                    <img src="https://images.unsplash.com/photo-1756789347830-1958ed8caa34?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzNnx8fGVufDB8fHx8fA%3D%3D" alt="Surgical procedure" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Surgical Procedure</h3>
+                        <p class="gallery-category">Surgeries</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="surgeries">
+                    <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?q=80&w=843&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Post-op recovery" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Post-Op Recovery</h3>
+                        <p class="gallery-category">Surgeries</p>
+                    </div>
+                </div>
+                
+                <!-- Patient Care -->
+                <div class="gallery-item" data-category="care">
+                    <img src="https://images.unsplash.com/photo-1596272875729-ed2ff7d6d9c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Compassionate care" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Compassionate Care</h3>
+                        <p class="gallery-category">Patient Care</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="care">
+                    <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Recovery area" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Recovery Area</h3>
+                        <p class="gallery-category">Patient Care</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="care">
+                    <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Happy patients" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Happy Patients</h3>
+                        <p class="gallery-category">Patient Care</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalImageTitle">Image Title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img id="modalImage" src="" alt="Gallery Image" class="img-fluid">
+                    <p id="modalImageCategory" class="mt-3 text-muted"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <div class="footer-logo">
+                    <div class="footer-logo-icon">
+                        <i class="fas fa-paw"></i>
+                    </div>
+                    <div class="footer-logo-text">Heaven <span>Veterinary</span></div>
+                </div>
+                <p>Providing exceptional care for your beloved pets since 2010. Our mission is to ensure the health and happiness of your furry family members.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h3 class="footer-heading">Quick Links</h3>
+                <ul>
+                    <li><a href="./index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="./about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="./services.html"><i class="fas fa-chevron-right"></i> Services</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Our Team</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Testimonials</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h3 class="footer-heading">Our Services</h3>
+                <ul>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Primary Checkup</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Vaccination</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Diagnostic Services</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Surgery</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Emergency Care</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact">
+                <h3 class="footer-heading">Contact Us</h3>
+                <ul>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>123 Pet Care Avenue<br>Animal City, AC 12345</div>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone-alt"></i>
+                        <div>+8 (801) 123-4567<br>+8 (801) 765-4321</div>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <div>info@heavenvet.com<br>appointments@heavenvet.com</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Heaven Veterinary Clinic. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>| <a href="https://techgiantpro.com/">Developed By TechGiant Pro-TGP</a></p>
+            <div class="payment-methods">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-amex"></i>
+                <i class="fab fa-cc-paypal"></i>
+                <i class="fab fa-cc-apple-pay"></i>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <!-- JavaScript -->
+     <script src="./js/gallery.js"></script>
+    
+    
+</body>
+</html>
